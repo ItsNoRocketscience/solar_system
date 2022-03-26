@@ -21,7 +21,7 @@ canvas.add_planet(planets.jupiter)
 # canvas.add_planet(planets.neptune)
 
 # canvas.add_planet(planets.moon)
-window.zoom_slider.set(0.90)
+window.zoom_slider.set(0.40)
 window.phi_slider.set(-70.)
 # canvas.redraw_planets()
 

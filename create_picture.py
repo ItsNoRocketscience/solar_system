@@ -2,7 +2,6 @@ from canvas import OrbitCanvas
 import datetime
 import planets
 import pathlib
-# import matplotlib.pyplot as plt
 
 
 def create_picture(phi: float, psi: float, theta: float, zoom: float,
@@ -33,12 +32,13 @@ def create_picture(phi: float, psi: float, theta: float, zoom: float,
 
 
 if __name__ == '__main__':
-    path = pathlib.Path('./plots')
-    plots = [p.name for p in path.iterdir()]
-    for plot in plots:
-        (path / plot).unlink()
+    # If wanted, existing plots can be deleted to keep only the most recent one
+    # path = pathlib.Path('./plots')
+    # plots = [p.name for p in path.iterdir()]
+    # for plot in plots:
+    #     (path / plot).unlink()
 
-    create_picture(phi=0., psi=0., theta=0., zoom=1.,
+    create_picture(phi=-70., psi=0., theta=0., zoom=.4,
                    time=datetime.datetime.now())
 
 
